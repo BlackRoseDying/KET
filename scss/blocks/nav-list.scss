@@ -1,0 +1,43 @@
+.nav-list
+{
+	box-sizing: border-box;
+	position: absolute;
+	display: none;
+	top: 70px;
+	left: 5%;
+	right: 5%;
+	margin: 0;
+	padding: 0px;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.8;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 10px;
+	background-color: #3b3939;
+
+	&__item:not(:last-child)
+	{
+		border-bottom: 1px solid #5c5c5e;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.nav-list
+	{
+		box-sizing: border-box;
+		position: static;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 10px;
+		color: #000;
+		border-radius: 0;
+		background-color: transparent;
+
+		&__item:not(:last-child)
+		{
+			border: none;
+		}
+	}
+}

@@ -1,0 +1,16 @@
+.slider
+{
+	margin-top: 30px;
+
+	&__item
+	{
+		max-width: 375px;
+	}
+
+	&__img
+	{
+		position: relative;
+		width: 375px;
+		height: 300px;
+	}
+}

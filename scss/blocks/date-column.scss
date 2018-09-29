@@ -1,0 +1,21 @@
+.date-column
+{
+	width: 80px;
+	text-align: right;
+
+	&__title
+	{
+		position: relative;
+		font-size: 17px;
+		color: $main-color;
+	}
+
+	&__date
+	{
+		font-size: 13px;
+		font-weight: 300;
+		color: $gray-color;
+	}
+
+	
+}

@@ -1,0 +1,33 @@
+.modern-design
+{
+	box-sizing: border-box;
+	padding: 40px 0px 50px 0px;
+	color: #fff;
+	text-align: center;
+	background-color: #252726;
+	background-size: 100%;
+
+	&__title
+	{
+		font-size: $section-title--mobile;
+		font-weight: 400;
+		
+		&::after
+		{
+			content: '';
+			display: block;
+			margin: 20px auto 0px auto;
+			width: 170px;
+			height: 2px;
+			background-color: $main-color;
+		}
+	}
+
+	&__text
+	{
+		display: block;
+		margin: 40px auto 0px auto;
+		width: 320px;
+		text-align: justify;
+	}
+}

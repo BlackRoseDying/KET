@@ -1,0 +1,25 @@
+.menu
+{
+	width: 20px;
+	height: 20px;
+	margin-right: 30px;
+
+	&__link
+	{
+		color: #fff;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.menu
+	{
+		width: 500px;
+		height: 100px;
+
+		&__link
+		{
+			color: $dark-color;
+		}
+	}
+}

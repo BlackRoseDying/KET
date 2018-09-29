@@ -1,0 +1,23 @@
+.description-column
+{
+	width: 200px;
+
+	&__title
+	{
+		font-size: 17px;
+		color: $dark-color;
+	}
+
+	&__description
+	{
+		font-size: 14px;
+		color: $gray-color;
+		text-align: justify;
+	}
+
+	&__link
+	{
+		color: $main-color;
+		font-size: 13px;
+	}
+}

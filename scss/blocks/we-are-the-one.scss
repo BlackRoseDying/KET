@@ -1,0 +1,130 @@
+.we-are-the-one
+{
+	margin: 0 auto;
+	width: 360px;
+	text-align: center;
+
+	&__title
+	{
+		font-size: $section-title--mobile;
+		color: $dark-color;
+
+		&::after
+		{
+			content: '';
+			display: block;
+			margin: 20px auto 0px auto;
+			width: 170px;
+			height: 2px;
+			background-color: $main-color;
+		}
+	}
+
+	&__text
+	{
+		font-size: 15px;
+		font-weight: 300;
+		color: $dark-color;
+	}
+
+	&__slider
+	{
+		margin: 0 auto;
+		width: 360px;
+		
+		&-item
+		{
+			background-color: #f7f7f7;
+
+			&:not(:last-child)
+			{
+				margin-right: 30px;
+			}
+		}
+	}
+
+	&__img
+	{
+		position: relative;
+		width: 175px;
+		height: 120px;
+
+		&-namespace
+		{
+			box-sizing: border-box;
+			position: absolute;
+			display: block;
+			top: 67px;
+			padding: 5px 0px;
+			width: 175px;
+			height: 40px;
+			font-size: 13px;
+			font-weight: 300;
+			background-color: rgba(37, 39, 38, 0.5);
+			color: #fff;
+		}
+	}
+
+	&__name
+	{
+		display: block;
+		font-size: 15px;
+		color: $main-color;
+	}
+
+	&__description
+	{
+		position: relative;
+		display: block;
+		margin: 15px auto 20px auto;
+		width: 145px;
+		font-size: 13px;
+	}
+
+	&__fb
+	{
+		padding: 8px 14px 8px 14px;
+		background-color: #36609e;
+
+		&-no-bgc
+		{
+			background-color: #f7f7f7;
+			position: relative;
+		}
+	}
+
+	&__tw
+	{
+		padding: 10px 8px 10px 8px;
+		background-color: #2ca9e1;
+
+		&-no-bgc
+		{
+			background-color: #f7f7f7;
+			position: relative;
+		}
+	}
+
+	&__gg
+	{
+		padding: 8px;
+		background-color: #db5442;
+
+		&-no-bgc
+		{
+			background-color: #f7f7f7;
+			position: relative;
+		}
+	}
+
+	&__dr
+	{
+		padding: 8px;
+		background-color: #ee558e;
+
+		&-no-bgc
+		{
+			background-color: #f7f7f7;
+		}
+	}
+}

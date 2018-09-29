@@ -1,0 +1,18 @@
+.category-list
+{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 320px;
+
+	&__item
+	{
+		font-size: 13px;
+		text-transform: uppercase;
+
+		&--active
+		{
+			color: $main-color;
+		}
+	}
+}

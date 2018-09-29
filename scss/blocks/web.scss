@@ -1,0 +1,33 @@
+.web
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+
+	&__title
+	{
+		font-size: 15px;
+		font-weight: 500;
+		color: $dark-color;
+		text-transform: uppercase;
+
+		&::after
+		{
+			content: '';
+			display: block;
+			margin: 20px auto 0px auto;
+			width: 70px;
+			height: 2px;
+			background-color: $main-color;
+		}
+	}
+
+	&__description
+	{
+		font-size: 13px;
+		font-weight: 300;
+		color: $gray-color;
+		text-align: center;
+	}
+}

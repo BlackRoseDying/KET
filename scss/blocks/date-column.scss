@@ -16,6 +16,22 @@
 		font-weight: 300;
 		color: $gray-color;
 	}
+}
 
-	
+@media (min-width: 768px)
+{
+	.date-column
+	{
+		width: 120px;
+
+		&__title
+		{
+			font-size: 19px;
+		}
+
+		&__date
+		{
+			font-size: 16px;
+		}
+	}
 }

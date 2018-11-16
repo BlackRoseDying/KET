@@ -1,7 +1,6 @@
 .we-are-the-one
 {
 	margin: 0 auto;
-	width: 360px;
 	text-align: center;
 
 	&__title
@@ -22,6 +21,9 @@
 
 	&__text
 	{
+		display: block;
+		margin: 0 auto 40px auto;
+		width: 320px;
 		font-size: 15px;
 		font-weight: 300;
 		color: $dark-color;
@@ -31,33 +33,33 @@
 	{
 		margin: 0 auto;
 		width: 360px;
+
+		&-wrapper
+		{
+			width: inherit;
+		}
 		
 		&-item
 		{
+			box-sizing: border-box;
+			padding-bottom: 10px;
 			background-color: #f7f7f7;
-
-			&:not(:last-child)
-			{
-				margin-right: 30px;
-			}
 		}
 	}
 
 	&__img
 	{
-		position: relative;
-		width: 175px;
+		width: 180px;
 		height: 120px;
 
 		&-namespace
 		{
 			box-sizing: border-box;
-			position: absolute;
 			display: block;
-			top: 67px;
-			padding: 5px 0px;
-			width: 175px;
-			height: 40px;
+			margin: -55px 0 0 0;
+			padding: 20px 0px 0px 0px; 
+			width: 100%;
+			height: 55px;
 			font-size: 13px;
 			font-weight: 300;
 			background-color: rgba(37, 39, 38, 0.5);
@@ -74,10 +76,9 @@
 
 	&__description
 	{
-		position: relative;
 		display: block;
-		margin: 15px auto 20px auto;
-		width: 145px;
+		width: 180px;
+		text-align: center;
 		font-size: 13px;
 	}
 
@@ -86,10 +87,20 @@
 		padding: 8px 14px 8px 14px;
 		background-color: #36609e;
 
+		&--bgc:hover
+		{
+			background-color: darken(#36609e, 15%);
+			transition: 1s;
+		}
+
 		&-no-bgc
 		{
 			background-color: #f7f7f7;
-			position: relative;
+
+			& g path:hover
+			{
+				fill: #36609e;
+			}
 		}
 	}
 
@@ -98,10 +109,21 @@
 		padding: 10px 8px 10px 8px;
 		background-color: #2ca9e1;
 
+		&--bgc:hover
+		{
+			background-color: darken(#2ca9e1, 15%);
+			transition: 1s;
+		}
+
 		&-no-bgc
 		{
 			background-color: #f7f7f7;
-			position: relative;
+
+			& g path:hover
+			{
+				fill: #2ca9e1;
+			}
+
 		}
 	}
 
@@ -110,10 +132,21 @@
 		padding: 8px;
 		background-color: #db5442;
 
+		&--bgc:hover
+		{
+			background-color: darken(#db5442, 15%);
+			transition: 1s;
+		}
+		
 		&-no-bgc
 		{
 			background-color: #f7f7f7;
-			position: relative;
+
+			& g path:hover
+			{
+				fill: #db5442;
+			}
+
 		}
 	}
 
@@ -122,9 +155,129 @@
 		padding: 8px;
 		background-color: #ee558e;
 
+		&--bgc:hover
+		{
+			background-color: darken(#ee558e, 15%);
+			transition: 1s;
+		}
+
 		&-no-bgc
 		{
 			background-color: #f7f7f7;
+
+			& g path:hover
+			{
+				fill: #ee558e;
+			}
+
 		}
 	}
 }
+
+@media (min-width: 768px)
+{
+	.we-are-the-one
+	{
+		&__title
+		{
+			font-size: 50px;
+
+			&::after
+			{
+				margin: 40px auto 0px auto;
+				width: 300px;
+			}
+		}
+
+		&__text
+		{
+			width: 50%;
+			font-size: 18px;
+			margin-bottom: 50px;
+		}
+
+		&__slider
+		{
+			width: 50%;
+
+			&-wrapper
+			{
+				display: flex;
+				justify-content: space-around;
+			}
+		}
+
+		&__img
+		{
+			width: 100%;
+			height: 380px;
+
+			&-namespace
+			{
+				position: relative;
+				margin-top: -70px;
+				padding-top: 14px;
+				height: 70px;
+				font-size: 18px;
+
+				&:after
+				{
+					position: absolute;
+					content: '';
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: rgba(37, 39, 38, 0.5);
+					z-index: -1;
+				}
+			}
+		}
+
+		&__name
+		{
+			font-size: 20px;
+		}
+
+		&__description
+		{
+			display: block;
+			margin: 40px auto 30px auto;
+			width: 60%;
+			text-align: center;
+			font-size: 16px;
+		}
+		
+		&__fb
+		{
+			padding: 14px 20px 14px 20px;
+		}
+
+		&__tw
+		{
+			padding: 16px 14px 16px 14px;
+		}
+
+		&__gg, &__dr
+		{
+			padding: 14px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

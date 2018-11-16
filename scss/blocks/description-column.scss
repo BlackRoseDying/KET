@@ -17,7 +17,38 @@
 
 	&__link
 	{
-		color: $main-color;
 		font-size: 13px;
+		transition: 0.7s;
+
+		&:hover
+		{
+			color: darken($main-color, 25%);
+		}
+
+		&:not(:hover)
+		{
+			color: $main-color;
+		}
+	}
+}
+
+@media (min-width: 768px)
+{
+	.description-column
+	{
+		&__title
+		{
+			font-size: 19px;
+		}
+
+		&__description
+		{
+			font-size: 16px;
+		}
+
+		&__link
+		{
+			font-size: 16px;
+		}
 	}
 }

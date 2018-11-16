@@ -28,6 +28,29 @@
 		display: block;
 		margin: 40px auto 0px auto;
 		width: 320px;
-		text-align: justify;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.modern-design
+	{
+		&__title
+		{
+			font-size: 50px;
+
+			&::after
+			{
+				margin: 40px auto 0px auto;
+				width: 300px;
+			}
+		}
+
+		&__text
+		{
+			width: 50%;
+			font-size: 18px;
+			margin-bottom: 50px;
+		}
 	}
 }

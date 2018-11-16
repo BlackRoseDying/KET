@@ -1,14 +1,14 @@
 .footer
 {
 	box-sizing: border-box;
-	padding: 20px;
-	height: 112px;
+	height: 60px;
 	background-size: 100%;
 	background-color: #131316;
 	text-align: center;
 
 	&__copyright
 	{
+		margin: 0;
 		font-size: 15px;
 		font-weight: 500;
 		color: #fff;
@@ -16,6 +16,27 @@
 
 	&__link
 	{
-		color: $main-color;
+		&:hover
+		{
+			transition: 0.8s;
+			color: #D98880;
+		}
+
+		&:not(:hover)
+		{
+			transition: 0.4s;
+			color: $main-color;
+		}
+	}
+}
+
+@media (min-width: 768px)
+{
+	.footer
+	{
+		&__copyright
+		{
+			font-size: 18px;
+		}
 	}
 }

@@ -16,9 +16,24 @@
 	border-radius: 10px;
 	background-color: #3b3939;
 
-	&__item:not(:last-child)
+	&__item
 	{
-		border-bottom: 1px solid #5c5c5e;
+		&:not(:last-child)
+		{
+			border-bottom: 1px solid #5c5c5e;
+		}
+		
+		& a:hover
+		{
+			transition: 0.8s;
+			color: #D98880;
+		}
+
+		& a:not(:hover)
+		{
+			transition: 0.4s;
+			color: #000;
+		}
 	}
 }
 
@@ -31,7 +46,8 @@
 		display: flex;
 		justify-content: space-between;
 		padding-top: 10px;
-		color: #000;
+		font-size: 20px;
+		font-weight: 400;
 		border-radius: 0;
 		background-color: transparent;
 

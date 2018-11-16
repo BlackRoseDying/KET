@@ -20,10 +20,10 @@
 				content: '';
 				display: block;
 				position: absolute;
-				left: 105px;
+				left: 155px;
 				top: 17px;
 				width: 1px;
-				height: 250px;
+				height: 320px;
 				background-color: #c3d0d8;
 			}
 
@@ -32,7 +32,7 @@
 				content: '';
 				display: block;
 				position: absolute;
-				left: 99px;
+				left: 149px;
 				top: 17px;
 				width: 7px;
 				height: 7px;
@@ -51,10 +51,10 @@
 				content: '';
 				display: block;
 				position: absolute;
-				left: 105px;
+				left: 155px;
 				top: 17px;
 				width: 1px;
-				height: 218px;
+				height: 300px;
 				background-color: #c3d0d8;
 			}
 
@@ -63,7 +63,7 @@
 				content: '';
 				display: block;
 				position: absolute;
-				left: 99px;
+				left: 149px;
 				top: 17px;
 				width: 7px;
 				height: 7px;
@@ -82,10 +82,10 @@
 				content: '';
 				display: block;
 				position: absolute;
-				left: 105px;
+				left: 155px;
 				top: 17px;
 				width: 1px;
-				height: 170px;
+				height: 205px;
 				background-color: #c3d0d8;
 			}
 
@@ -94,7 +94,7 @@
 				content: '';
 				display: block;
 				position: absolute;
-				left: 99px;
+				left: 149px;
 				top: 17px;
 				width: 7px;
 				height: 7px;
@@ -113,7 +113,7 @@
 				content: '';
 				display: block;
 				position: absolute;
-				left: 99px;
+				left: 149px;
 				top: 17px;
 				width: 7px;
 				height: 7px;
@@ -121,6 +121,17 @@
 				border-radius: 50%;
 				background-color: #fff;
 			}
+		}
+	}
+}
+
+@media (min-width: 768px)
+{
+	.timeline
+	{
+		&__zone
+		{
+			width: 400px;
 		}
 	}
 }

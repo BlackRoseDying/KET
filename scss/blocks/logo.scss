@@ -5,13 +5,35 @@
 	align-items: center;
 	width: 136px;
 
-	&__text
+	&__link
 	{
 		display: block; 
 		margin-left: 25px;
 		font-size: 22px;
 		font-weight: 800;
-		color: $dark-color;
 		text-transform: uppercase;
+
+		&:hover
+		{
+			transition: 1s;
+			color: #D98880;
+		}
+
+		&:not(:hover)
+		{
+			transition: 0.4s;
+			color: $dark-color;
+		}
+	}
+}
+
+@media (min-width: 768px)
+{
+	.logo
+	{
+		&__link
+		{
+			font-size: 33px;		
+		}
 	}
 }

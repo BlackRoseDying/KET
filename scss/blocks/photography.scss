@@ -31,3 +31,27 @@
 		text-align: center;
 	}
 }
+
+@media (min-width: 768px)
+{
+	.photography
+	{
+		margin-top: -4.5px;
+
+		&__title
+		{
+			font-size: 18px;
+
+			&::after
+			{
+				content: '';
+				width: 100px;
+			}
+		}
+
+		&__description
+		{
+			font-size: 17px;
+		}
+	}
+}

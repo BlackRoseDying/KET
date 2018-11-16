@@ -30,3 +30,29 @@
 		font-size: 15px;
 	}
 }
+
+@media (min-width: 768px)
+{
+	.portfolio
+	{
+		padding: 1px 0px 30px 0px;
+
+		&__title
+		{
+			font-size: 50px;
+
+			&::after
+			{
+				margin: 40px auto 0px auto;
+				width: 300px;
+			}
+		}
+
+		&__text
+		{
+			width: 50%;
+			font-size: 18px;
+			margin-bottom: 50px;
+		}
+	}
+}

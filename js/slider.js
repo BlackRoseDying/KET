@@ -6,40 +6,18 @@
 	{
 		$('.slider').slick({
 			infinite: true,
-			arrows: true,
+			arrows: false,
 			dots: true,
-			centerMode: true,
 			slidesToShow: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
 			responsive: 
 			[
 			    {
-			      breakpoint: 1024,
-			      settings: {
-			        infinite: true,
-			        dots: false,
-			        arrows: false,
-			        autoplay: true,
-			        autoplaySpeed: 3000
-			      }
-			    },
-			    {
-			      breakpoint: 600,
-			      settings: {
-			        infinite: true,
-			        dots: false,
-			        arrows: true,
-			        autoplay: true,
-			        autoplaySpeed: 3000,
-			      }
-			    },
-			    {
 			      breakpoint: 480,
-			      settings: {
-			        infinite: true,
-			        dots: true,
-			        arrows: true,
-			        autoplay: false,
-			        centerMode: false
+			      settings: 
+			      {
+			        autoplay: false
 			      }
 			    }
    			]
@@ -47,40 +25,19 @@
 
 		$('.we-are-the-one__slider').slick({
 			infinite: true,
-			arrows: true,
+			arrows: false,
 			dots: true,
-			centerMode: true,
+			centerMode: false,
 			slidesToShow: 1,
+			autoplay: true,
+			autoplaySpeed: 5000,
 			responsive: 
 			[
 			    {
-			      breakpoint: 1024,
-			      settings: {
-			        infinite: true,
-			        dots: false,
-			        arrows: false,
-			        autoplay: true,
-			        autoplaySpeed: 3000
-			      }
-			    },
-			    {
-			      breakpoint: 600,
-			      settings: {
-			        infinite: true,
-			        dots: false,
-			        arrows: true,
-			        autoplay: true,
-			        autoplaySpeed: 3000
-			      }
-			    },
-			    {
-			      breakpoint: 480,
-			      settings: {
-			        infinite: true,
-			        dots: true,
-			        arrows: true,
-			        autoplay: false,
-			        centerMode: false,
+			      breakpoint: 768,
+			      settings: 
+			      {
+			      	autoplay: false,
 			        slidesToShow: 2,
 			        slidesToScroll: 2
 			      }

@@ -18,13 +18,13 @@
 	{
 		&:hover
 		{
-			transition: 0.8s;
+			transition: 0.3s;
 			color: #D98880;
 		}
 
 		&:not(:hover)
 		{
-			transition: 0.4s;
+			transition: 0.3s;
 			color: $main-color;
 		}
 	}

@@ -15,6 +15,7 @@
 	text-transform: uppercase;
 	border-radius: 10px;
 	background-color: #3b3939;
+	z-index: 2;
 
 	&__item
 	{
@@ -25,13 +26,13 @@
 		
 		& a:hover
 		{
-			transition: 0.8s;
+			transition: 0.3s;
 			color: #D98880;
 		}
 
 		& a:not(:hover)
 		{
-			transition: 0.4s;
+			transition: 0.3s;
 			color: #000;
 		}
 	}

@@ -12,16 +12,15 @@
 		font-size: 22px;
 		font-weight: 800;
 		text-transform: uppercase;
+		transition: 0.3s;
 
 		&:hover
 		{
-			transition: 1s;
 			color: #D98880;
 		}
 
 		&:not(:hover)
 		{
-			transition: 0.4s;
 			color: $dark-color;
 		}
 	}
